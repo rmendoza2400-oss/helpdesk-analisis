@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reportar Incidencia - Sistema Help Desk</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <a href="index.html">Inicio</a>
+    <a href="reportar.html">Reportar Incidente</a>
+    <a href="tickets.html">Ver Tickets</a>
+</nav>
+
+<h1>Reportar Nueva Incidencia</h1>
+
+<p>
+    Complete el siguiente formulario para registrar un incidente técnico.
+</p>
+
+<div class="alerta-exito">
+    Todos los reportes son revisados por el equipo de soporte técnico del Data Center.
+</div>
+
+<form class="formulario">
+
+    <label for="nombre">Nombre Completo:</label>
+    <input
+        type="text"
+        id="nombre"
+        placeholder="Ingrese su nombre completo"
+        required
+    >
+
+    <label for="correo">Correo Institucional:</label>
+    <input
+        type="email"
+        id="correo"
+        placeholder="usuario@utm.edu.ec"
+        required
+    >
+
+    <label for="tipo">Tipo de Incidente:</label>
+    <select id="tipo" required>
+        <option value="">Seleccione una opción</option>
+        <option>Hardware</option>
+        <option>Software</option>
+        <option>Red</option>
+        <option>Correo Institucional</option>
+    </select>
+
+    <label for="descripcion">Descripción del Problema:</label>
+    <textarea
+        id="descripcion"
+        placeholder="Describa el problema presentado"
+        required
+    ></textarea>
+
+    <button class="btn" type="submit">
+        Enviar Reporte
+    </button>
+
+</form>
+
+</body>
+</html>
+
